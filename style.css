@@ -4,4 +4,8 @@ body{
 
 #banner{
 	font-family: 'Quattrocento Sans', sans-serif;
+	text-align: center;
+	padding: 150px;
+	color: white;
+	text-shadow: 1px 1px 5px black;
 }

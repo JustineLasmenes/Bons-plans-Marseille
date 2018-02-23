@@ -1,11 +1,52 @@
 body{
-  font-family: 'Courgette', cursive;
+  background: rgb(245,245,245);
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 h2{
+	font-family: 'Montserrat', sans-serif;
 }
 
 #banner{
-	font-family: 'Quattrocento Sans', sans-serif;
-	text-align: center;
-	padding: 150px;
-	color: white;
-	text-shadow: 1px 1px 5px black;
+  text-align: center;
+  background-image: linear-gradient(rgba(50,50,50,0.4),rgba(50,50,50,0.4)), url("images/marseille.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 150px;
+  color: white;
+}
+
+#banner h1{
+	font-size: 72px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.design{
+  padding: 50px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#footer{
+  padding: 30px;
+  background: rgb(30, 30, 30);
+  color: lightgrey;
+}
+
+#footer a {
+  color: lightgrey;
+  font-size: 25px;
+}
+
+#footer a:hover {
+  color: white;
+}
+
+.image{
+	height: 120px;
+}
+
+.bouton{
+	margin: 25px;
 }

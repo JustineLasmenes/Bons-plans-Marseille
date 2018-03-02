@@ -2,75 +2,302 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<title>Mon app</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:300,400,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="images/logo.png" />
+	<title>Vesito Marsiho</title>
 </head>
 
 <body>
 	<div id="banner">
+		<nav class="navbar navbar-expand-lg navbar-light my-navbar">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+	    <a class="navbar-brand my-brand" href="#">VesitoMarsiho</a>
+	    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+	      <li class="nav-item active">
+	        <a class="nav-link my-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link my-link" href="#visites">Visites <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link my-link" href="#Promenades">Promenades <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link my-link" href="#Logements">Logements <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link my-link" href="#Restaurants">Restaurants <span class="sr-only">(current)</span></a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+	    </form>
+	  </div>
+	</nav>
+		<div id="meteo">
+			<a class="weatherwidget-io" href="https://forecast7.com/fr/43d305d37/marseille/" data-label_1="MARSEILLE" data-label_2="Météo" data-icons="Climacons Animated" data-days="3" data-theme="original" data-basecolor="rgba(255, 255, 255, 0.02)" >MARSEILLE Météo</a>
+		<script>
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+		</script>
+		</div>
 		<h1>VESITO MARSIHO</h1>
-		<h2>Le Bonheur Haute Définition</h2>
-		<a href=""> <button type="button" class=" bouton btn-lg btn btn-secondary">Inscrivez vous</button> </a>
+		<h2>LES BONS PLANS MARSEILLAIS</h2>
+		<h3>ENJOY THE MOMENT</h3>
+		<a href=""> <button type="button" class="btn btn-outline-secondary">Inscrivez vous</button> </a>
 	</div>
-<div class="container">
+	<div class="chat">
+			<h2>Plannifier</h2>
+		</div>
+		<div class="container padding">
+			<div class="row">
+				<div class="col-12 col-sm-8 design">
+					<p id="concept"><strong>Vesito Marsiho</strong> recense toutes les bonnes adresses de <strong>Marseille.</strong>
+					 <br>Allant des célèbres restaurants en passant par les bars branchés ou encore des endroits <strong>incontournables</strong> pour vous loger et à tous les prix.</p>
+				</div>
+				<div class="col-12 col-sm-4 design">
+
+						<h3 class="date">Du</h3>
+						<input type="date" max="2012-06-25" min="2011-08-13" name="the_date" class="cal">
+						<h3 class="date">Au</h3>
+						<input type="date" max="2012-06-25" min="2011-08-13" name="the_date" class="cal2">
+				</div>
+			</div>
+		</div>
+
+		<div class="chat">
+			<h2>Découvrir</h2>
+		</div>
+	<div class="container">
 	<div class="row">
-		<div class="col-12 col-md-6 col-lg-3 design">
+		<div class="col-xs-6 col-sm-3 design" id="visites">
 			<div class="card" style="width: 15rem;">
 			  <img class="card-img-top" src="images/mucem.jpg" alt="Mucem">
 			  <div class="card-body">
 			    <h5 class="card-title">Visites</h5>
-			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			    <a href="#" class="btn btn-secondary">Go somewhere</a>
+			    <p class="card-text">Du MUCEM au palais Longchamp en passant par Notre Dame de la Garde, vous connaitrez tous les lieux incontournables de Marseille.</p>
+			    <a href="#" class="btn btn-secondary">Que visiter ?</a>
 			  </div>
 			</div>
 		</div>
-		<div class="col-12 col-md-6 col-lg-3 design">
+		<div class="col-xs-6 col-sm-3 design" id="Promenades">
 			<div class="card" style="width: 15rem;">
-			  <img class="card-img-top" src="images/randonne.jpg" alt="Randonnées calanques">
+			  <img class="card-img-top" src="images/calanque.jpg" alt="Randonnées calanques">
 			  <div class="card-body">
 			    <h5 class="card-title">Promenades</h5>
-			    <p class="card-text">Découvrez les merveilleux paysages des calanques</p>
-			    <a href="#" class="btn btn-secondary">Go somewhere</a>
+			    <p class="card-text">Partez à la découverte des calanques, des îles du Frioul, des plus belles plages marseillaises...<br><br> Dépaysement garanti ! </p>
+			    <a href="#" class="btn btn-secondary">Où se promener ?</a>
 			  </div>
 			</div>
 		</div>
-		<div class="col-12 col-md-6 col-lg-3 design">
+		<div class="col-xs-6 col-sm-3 design" id="Logements">
 			<div class="card" style="width: 15rem;">
 			  <img class="card-img-top" src="images/logement.jpg" alt="Logement panier">
 			  <div class="card-body">
 			    <h5 class="card-title">Logements</h5>
-			    <p class="card-text">Du petit appartement au Panier au majestueux Intercontinental</p>
-			    <a href="#" class="btn btn-secondary">Go somewhere</a>
+			    <p class="card-text">Du petit appartement dans le quartier du Panier au majestueux hôtel Intercontinental, voici quelques bons plans pour se loger.</p>
+			    <a href="#" class="btn btn-secondary">Où se loger ?</a>
 			  </div>
 			</div>
 		</div>
-		
-		<div class="col-12 col-md-6 col-lg-3 design">
+		<div class="col-xs-6 col-sm-3 design" id="Restaurants">
 			<div class="card" style="width: 15rem;">
-			  <img class="card-img-top" src="images/restaurant.jpg" alt="Restaurant Corniche">
+			  <img class="card-img-top" src="images/restaurant1.jpg" alt="Restaurant Corniche">
 			  <div class="card-body">
 			    <h5 class="card-title">Restaurants</h5>
-			    <p class="card-text">De la bonne bouillabaisse </p>
-			    <a href="#" class="btn btn-secondary">Go somewhere</a>
+			    <p class="card-text">Vous rêvez de découvrir la bouillabaisse, les pieds-paquets ou encore de déguster de l'aïoli ? Le tout accompagné d'un pastis ? <br></p>
+			    <a href="#" class="btn btn-secondary">Où manger ?</a>
 			  </div>
 			</div>
 		</div>
 	</div>
 </div>
+<br>
+<center><button type="button" class="btn btn-outline-secondary">Valider</center></button>
+<br>
+	<div class="chat">
+	<h1>Evénements à venir</h1>
+	</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6 col-sm-3 design">
 
-	<div id="footer">
-		<ul class="list-inline">
-		  <li class="list-inline-item"><a href="#"><i class="fa fa-youtube"></i></a></li>
-		  <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-		  <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-		  <li class="list-inline-item"><a href="#"><i class="fa fa-github"></i></a></li>
-		</ul>
+	<div class="card" style="width: 15rem;">
+	  <div class="card-body">
+	    <h5 class="card-title">Vendredi 2 mars</h5>
+	    <h6 class="card-subtitle mb-2 text-muted">L'apéro du mois</h6>
+	    <p class="card-text">Vesito Marsiho vous invite à son apéro' du mois au Barjac dans le quartier du Panier. Dans un cadre convivial, rencontrez notre équipe autour d'un verre !</p>
+	    <a href="#" class="card-link">Voir l'événement</a>
+	  </div>
 	</div>
 
+		</div>
+
+		<div class="col-xs-6 col-sm-3 design">
+		
+		<div class="card" style="width: 15rem;">
+	  <div class="card-body">
+	    <h5 class="card-title">Samedi 3 mars</h5>
+	    <h6 class="card-subtitle mb-2 text-muted">Election de Miss Cagole</h6>
+	    <p class="card-text">Vesito Marsiho aura l'honneur d'être jury pour l'élection de Miss Cagole qui aura lieu au Son des Guitares dans le quartier de l'Opéra.</p>
+	    <a href="#" class="card-link">Voir l'événement</a>
+	  </div>
+	</div>
+
+		</div>
+
+		<div class="col-xs-6 col-sm-3 design">
+			<div class="card" style="width: 15rem;">
+	  <div class="card-body">
+	    <h5 class="card-title">Lundi 5 mars</h5>
+	    <h6 class="card-subtitle mb-2 text-muted">Dégustation du nouveau pastis</h6>
+	    <p class="card-text">Vesito Marsiho est ravi de vous inviter en collaboration avec Pernod Ricard à la dégustation du nouveau pastis</p>
+	    <a href="#" class="card-link">Voir l'événement</a>
+	  </div>
+	</div>
+
+		</div>
+		
+		<div class="col-xs-6 col-sm-3 design">
+				<div class="card" style="width: 15rem;">
+	  <div class="card-body">
+	    <h5 class="card-title">Dimanche 10 mars</h5>
+	    <h6 class="card-subtitle mb-2 text-muted">Tournoi de pétanque</h6>
+	    <p class="card-text">Venez affronter l'équipe de Vesito Marsiho avec votre triplette et vos boules à la Boule du Panier </p>
+	    <a href="#" class="card-link">Voir l'événement</a>
+	  </div>
+	</div>
+			</div>
+		</div>
+	</div>
+	<div class="chat">
+		<h1>Vos avis sur Vesito Marsiho <i class="fas fa-heart heart"></i></h1>
+	</div>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class='reviews'>
+            <!-- Panel one -->
+            <div class='panel'>
+              <img src="images/justine.jpeg">
+              <p>
+                <i class="far fa-star stars"></i>
+                <i class="far fa-star stars"></i>
+                <i class="far fa-star stars"></i>
+                <i class="far fa-star stars"></i>
+                <i class="far fa-star"></i>
+                <br>
+                <br>
+                "Première bouillabaisse de ma vie, un vrai délice !"
+              </p>
+              <h7>Justine L</h7>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class='reviews'>
+            <!-- Panel Two -->
+            <div class='panel'>
+              <img src="images/clothilde.jpg">
+              <p>
+              	<i class="far fa-star stars"></i>
+                <i class="far fa-star stars"></i>
+                <i class="far fa-star stars"></i>
+                <i class="far fa-star stars"></i>
+                <i class="far fa-star"></i>
+                <br>
+                <br>
+                "Un petit appartement dans le joli quartier du Panier à recommander sans hésitation !"
+              </p>
+              <h7>Clothilde C</h7>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class='reviews'>
+            <!-- Panel Three -->
+            <div class='panel'>
+              <img src="images/alain.jpg">
+              <p>
+              	<i class="far fa-star stars"></i>
+                <i class="far fa-star stars"></i>
+                <i class="far fa-star stars"></i>
+                <i class="far fa-star stars"></i>
+                <i class="far fa-star stars"></i>
+                <br>
+                <br>
+                "Aux premières loges de l'élection Miss Cagole grâce à Vesito Marsiho, #etmercihein"
+              </p>
+              <h7>Alain L</h7>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class='reviews'>
+            <!-- Panel Four-->
+            <div class='panel'>
+              <img src="images/emmy.jpg">
+              <p>
+              	<i class="far fa-star stars"></i>
+                <i class="far fa-star stars"></i>
+                <i class="far fa-star stars"></i>
+                <i class="far fa-star stars"></i>
+                <i class="far fa-star"></i>
+                <br>
+                <br>
+                "Entre Pastis et Ricard, mon coeur balance mais ne le dites pas aux marseillais !"
+              </p>
+              <h7>Emmy J</h7>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Précédent</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Suivant</span>
+      </a>
+    </div>
+	<div id="footer">
+		<div class="container-fluid" id="footer">
+		<div class="row">
+			<div class="col-6 text-center">
+				<h1>VESITO MARSIHO</h1>
+				<h2>Les Bons Plans Marseillais</h2>
+				<h3>Enjoy the moment</h3>
+			</div>
+			<div class="col-3">
+				<ul>
+				<li> <a href="http://www.google.com" class="leg">Mentions Légales</a>
+				<li> <a href="http://www.google.com" class="leg">Contact</a>
+				</ul>
+				</div>
+			<div class="col-3">
+				</div>	
+		</div>
+		<ul class="list-inline">
+		  <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+		  <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+		  <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+		  <li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
+		</ul>
+	</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
